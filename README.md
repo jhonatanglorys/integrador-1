@@ -2,6 +2,8 @@
 
 A continuación se muestran las instrucciones para la instalación y ejecucion
 
+Si ya cuentas con Pyton instalado, ve a [Libreria request](#libreria-request)
+
 ## Configurar la consola por defecto - solo para MacOS
 
 ```
@@ -59,7 +61,7 @@ De alli obtienes un KEY, se debe usar en el siguiente comando usando el valor de
 curl "http://api.proxiesapi.com/?auth_key=XXXXXXXXXXXXXXXXXXXXX&url=https://scholar.google.com/"
 ```
 
-# Instalar la libreria request de Python
+# Libreria request
 ```
 pip install requests
 ```
