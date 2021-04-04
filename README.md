@@ -64,8 +64,14 @@ curl "http://api.proxiesapi.com/?auth_key=XXXXXXXXXXXXXXXXXXXXX&url=https://scho
 pip install requests
 ```
 
+
+## Instalar BeautifulSoup framework de webscraping 
+```
+pip install beautifulsoup4
+```
+
 # Ejecucion
-Correr el comando
+Descargar el archivo main.py, ir al directorio que lo contiene y correr el comando
 ```
 python3 main.py
 ```
