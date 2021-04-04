@@ -13,7 +13,7 @@ chsh -s /bin/zhs
 python --version
 ```
 
-#Instalar homebrew 
+## Instalar homebrew 
 Gestor de paquetes para MacOS
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -55,7 +55,7 @@ Crear una cuenta en [Proxies API](https://app.proxiesapi.com/index.php)
 De alli obtienes un KEY, se debe usar en el siguiente comando usando el valor de KEY del sitio anterior y reemplazando la URL de Google Scholar
 
 
-````
+```
 curl "http://api.proxiesapi.com/?auth_key=XXXXXXXXXXXXXXXXXXXXX&url=https://scholar.google.com/"
 ```
 
