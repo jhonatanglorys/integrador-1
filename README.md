@@ -2,13 +2,13 @@
 
 A continuación se muestran las instrucciones para la instalación y ejecucion
 
-# Configurar la consola por defecto - solo para MacOS
+## Configurar la consola por defecto - solo para MacOS
 
 ```
 chsh -s /bin/zhs
 ```
 
-#Verificar la version de Python
+## Verificar la version de Python
 ```
 python --version
 ```
@@ -50,7 +50,7 @@ python
 ```
 
 
-# Proxy para que Google no bloquee nuestra IP por hacer multiples solicitudes a su pagina
+## Proxy para que Google no bloquee nuestra IP por hacer multiples solicitudes a su pagina
 Crear una cuenta en [Proxies API](https://app.proxiesapi.com/index.php)
 De alli obtienes un KEY, se debe usar en el siguiente comando usando el valor de KEY del sitio anterior y reemplazando la URL de Google Scholar
 
