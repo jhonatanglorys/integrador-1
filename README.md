@@ -86,5 +86,7 @@ Descargar el archivo main.py, ir al directorio que lo contiene y correr el coman
 python3 main.py
 ```
 
+Se debe ingresar la cadena de búsqueda y el idioma (es para español, en para inglés)
+
 El resultado deseado debe ser algo asi:
-![Screenshot](images/prueba-1.png)
+![Screenshot](images/prueba-2.png)
