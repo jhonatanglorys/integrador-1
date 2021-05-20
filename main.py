@@ -9,7 +9,7 @@ from tkinter import *
 idioma = "ES"
 
 #Ingreso la cantidad que quiero de resultados (Multiplo de 10)
-cantidadres = 10
+cantidadres = 100
 
 
 #Metodo para realizar la busqueda
@@ -23,7 +23,7 @@ def buscarResultados(cadena, idioma, cantidadres):
 
 
     #Crear nuevo archivo
-    file = open('resultados.csv','w')
+    file = open('resultados.csv','w',encoding="ISO-8859-1")
     writer = csv.writer(file)
 
 
@@ -60,19 +60,19 @@ def buscarResultados(cadena, idioma, cantidadres):
         for item in soup.select('[data-lid]'):
             #print(item)
             #Titulo del articulo
-            titulo = item.select('h3')[0].get_text()
+            titulo = str(item.select('h3')[0].get_text())
 
             tipodoc = titulo.find("[CITAS]")
 
             if tipodoc==-1:
                 #vinculo del articulo
-                vinculo = item.select('a')[0]['href']
+                vinculo = str(item.select('a')[0]['href'])
                 print(vinculo)
                 #Resumen
-                resumen = item.select('.gs_rs')[0].get_text()
+                resumen = str(item.select('.gs_rs')[0].get_text())
                 print(resumen)
                 print('-------------------')
-                writer.writerow([titulo.encode('utf-8'),vinculo.encode('utf-8'),resumen.encode('utf-8')]) 
+                writer.writerow([str(titulo.encode('utf-8')),str(vinculo.encode('utf-8')),str(resumen.encode('utf-8'))]) 
             
         itbusqueda = int(itbusqueda) - 1
             
