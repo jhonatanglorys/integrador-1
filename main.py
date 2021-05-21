@@ -9,7 +9,7 @@ from tkinter import *
 idioma = "ES"
 
 #Ingreso la cantidad que quiero de resultados (Multiplo de 10)
-cantidadres = 100
+cantidadres = 10
 
 
 #Metodo para realizar la busqueda
@@ -92,10 +92,13 @@ def buscarResultados(cadena, idioma, cantidadres):
 root = tk.Tk()
 root.title('Plan de búsqueda')
 root.iconbitmap('./images/pajaro.ico')
-root.geometry("850x400")
+root.geometry("850x300")
 
 lbl = Label(root, text="Plan de búsqueda", font=('Times', '30', 'italic'))
 lbl.pack()
+
+
+
 
 def button_click():
     text = ''
@@ -110,39 +113,22 @@ def button_click():
     
     eexplog.insert(tk.END,text)  
        
-            
+      
 
     
     
 #Frame principal
-frame = tk.Frame(root, width=400, height=500)
+frame = tk.Frame(root, width=200, height=500)
 frame.pack(fill=None, expand=False)
 
-#Descriptores - 4,5
-lbldescr = Label(frame, text="Descriptores", font=('Times', '15', 'italic'))
-lbldescr.grid(row=0, column=0)
-edescr= Text(frame, width=30, height=5)
-edescr.grid(row=1, column=0, padx=10, pady=10)
-
-#Distractores - 4,5
-lbldistr = Label(frame, text="Distractores", font=('Times', '15', 'italic'))
-lbldistr.grid(row=0, column=1)
-edistr= Text(frame, width=30, height=5)
-edistr.grid(row=1, column=1, padx=10, pady=10)
-
 #Expresiones logicas de busqueda -6,7
-lblexplog = Label(frame, text="Expresiones logicas de busqueda", font=('Times', '13', 'italic'))
-lblexplog.grid(row=2, column=0)
 eexplog= Text(frame, width=65, height=5)
-eexplog.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
+eexplog.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
 #Boton Buscar,Limpiar - 6,7
-button_Buscar = Button(frame, text="Generar \n expresiones", command=button_click , padx=50, pady=5, font=('Times', '10', 'italic'))
-button_Buscar.grid(row=1, column=2)
 button_Buscar = Button(frame, text="Buscar", command=lambda: buscarResultados(eexplog.get(1.0,END),idioma,cantidadres),padx=50, pady=5, font=('Times', '15', 'italic'))
-button_Buscar.grid(row=2, column=2)
-button_Limpiar = Button(frame, text="Limpiar", padx=50, pady=5, font=('Times', '15', 'italic'))
-button_Limpiar.grid(row=3, column=2)
+button_Buscar.grid(row=0, column=3)
+
 
 
 root.mainloop()
