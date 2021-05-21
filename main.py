@@ -9,7 +9,7 @@ from tkinter import *
 idioma = "ES"
 
 #Ingreso la cantidad que quiero de resultados (Multiplo de 10)
-cantidadres = 10
+cantidadres = 400
 
 
 #Metodo para realizar la busqueda
